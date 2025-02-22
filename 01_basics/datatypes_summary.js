@@ -33,7 +33,7 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof(heros));
+console.log(typeof(outsideTemp));
 
 
 // Undefined => "undefined"
@@ -44,3 +44,34 @@ console.log(typeof(heros));
 // Object => "object"
 // Function => "function / object function"
 // Array => "object"
+
+
+
+// ----------------------------------------------------------
+
+// Stack (Primitive)-- get copy of the declared variable
+
+// Heap (Non-Primitive) -- get the reference of the original value 
+
+
+let myYoutube = "_chirag_patil"
+
+let anothername = myYoutube
+anothername = "patil001"
+
+console.log(myYoutube);
+
+console.log(anothername);
+
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "abc@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "chirag@gmail.com" 
+
+console.log(userOne.email)
+console.log(userTwo.email)
